@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="KC_Dragon_Ball_IOS_Avanzado" customModuleProvider="target">
+            <connections>
+                <outlet property="emailText" destination="afA-Dj-uSA" id="dOv-Wl-qrd"/>
+                <outlet property="passwordTest" destination="j4I-pr-eWT" id="i8j-4h-Blt"/>
+                <outlet property="positionYLogin" destination="xOL-tz-qWD" id="kag-RU-F2U"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" tag="1" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Goku onda vital" translatesAutoresizingMaskIntoConstraints="NO" id="81t-d5-Fgn" userLabel="Fondo">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" red="0.086274509799999996" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pWm-sR-9RC" userLabel="SV Login">
+                    <rect key="frame" x="71.666666666666686" y="661" width="250" height="130"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="jcrubio@equinsa.es" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="afA-Dj-uSA">
+                            <rect key="frame" x="0.0" y="0.0" width="250" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="GNe-M6-GLi"/>
+                                <constraint firstAttribute="width" constant="250" id="TNB-TZ-ayn"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="ish-zK-tL0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="j4I-pr-eWT">
+                            <rect key="frame" x="0.0" y="50" width="250" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="250" id="EwE-a5-tB1"/>
+                                <constraint firstAttribute="height" constant="30" id="Uqe-S9-OEK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Avb-WC-rho" userLabel="Login">
+                            <rect key="frame" x="0.0" y="100" width="250" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="250" id="5Df-dT-cdk"/>
+                                <constraint firstAttribute="height" constant="30" id="lEY-4Y-XV6"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="LOGIN">
+                                <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="loginTapped:" destination="-1" eventType="touchUpInside" id="lNI-gs-Wc2"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="g3J-WO-Cv8">
+                    <rect key="frame" x="16" y="59" width="361" height="68"/>
+                    <color key="backgroundColor" red="0.086274509799999996" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="68" id="lRx-Nb-Zu9"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="g3J-WO-Cv8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="Grh-3M-NHH"/>
+                <constraint firstItem="81t-d5-Fgn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Och-oS-ypw"/>
+                <constraint firstItem="g3J-WO-Cv8" firstAttribute="centerX" secondItem="pWm-sR-9RC" secondAttribute="centerX" id="StD-JE-6O3"/>
+                <constraint firstItem="g3J-WO-Cv8" firstAttribute="centerX" secondItem="81t-d5-Fgn" secondAttribute="centerX" id="UzW-7d-bj7"/>
+                <constraint firstItem="81t-d5-Fgn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WNb-J5-kop"/>
+                <constraint firstItem="g3J-WO-Cv8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="dQG-eR-PpR"/>
+                <constraint firstAttribute="bottom" secondItem="81t-d5-Fgn" secondAttribute="bottom" id="hx0-Za-wEK"/>
+                <constraint firstAttribute="trailing" secondItem="81t-d5-Fgn" secondAttribute="trailing" id="i07-An-8b4"/>
+                <constraint firstItem="pWm-sR-9RC" firstAttribute="centerY" secondItem="81t-d5-Fgn" secondAttribute="centerY" constant="300" id="xOL-tz-qWD"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Goku onda vital" width="828" height="1791"/>
+        <image name="title" width="787" height="136"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
